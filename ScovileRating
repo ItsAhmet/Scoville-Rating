@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ScovileRating {
+public static void main(String args []) {
+	boolean rating;
+	Scanner scan = new Scanner( System.in );;
+	System.out.println("Is rating less than 5,000?");
+	rating = scan.nextBoolean();
+	if (rating==true) {
+		System.out.println("Level is MILD");}
+	else {
+		System.out.println("Is rating less than 20,000?");
+		rating = scan.nextBoolean();
+		if (rating==true) {
+			System.out.println("Level is MEDIUM");}
+		else {
+			System.out.println("Is rating less than 70,000?");
+			rating = scan.nextBoolean();}
+			if (rating==true) {
+				System.out.println("Level is HOT");}
+			else {
+				System.out.println("Level is EXTREME");}
+			}
+	}
+			
+}
+
